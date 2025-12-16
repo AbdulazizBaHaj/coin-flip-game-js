@@ -1,0 +1,133 @@
+html,
+body {
+  height: 100%; /* Ensures the elements take the full height of the viewport */
+  margin: 0; /* Removes default browser margins */
+  padding: 0; /* Removes default browser padding */
+  /* Hides any content that exceeds the viewport and prevents scrolling */
+}
+
+body {
+  background-color: #0f1319;
+  display: flex;
+  flex-direction: column;
+}
+
+#app-container {
+  background-color: #3f4e65;
+  font-family: "Galindo", sans-serif;
+  color: #d1d4d7;
+  width: 50%;
+  border: 5px solid #9ec5fe; /* Adjust color to match primary-subtle */
+  border-radius: 0.5rem;
+}
+
+#header-title {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 0px #35383f;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #35383f;
+}
+
+#flip-btn,
+#clear-btn {
+  font-size: 1.5rem;
+}
+
+#flip-btn {
+  box-shadow: 0px 4px 0px 0px #23649b;
+}
+
+#clear-btn {
+  box-shadow: 0px 4px 0px 0px #91969b;
+}
+
+#footer {
+  color: #d1d4d7;
+  background-color: #2f3b4ca9;
+}
+
+#copyright {
+  background-color: #1f2732;
+}
+
+#coin {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  perspective: 1000px; /* Gives 3D depth */
+  user-select: none;
+}
+
+.coin {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.4, 1.2); /* Smooth flip */
+}
+
+.coin-front,
+.coin-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the back side */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #ffd700, #b8860b);
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.coin-front {
+  transform: rotateY(0deg);
+}
+
+.coin-back {
+  transform: rotateY(180deg);
+}
+
+.coin-side-img {
+  width: 80%;
+  height: 80%;
+  pointer-events: none;
+}
+
+/* Flipping states */
+.coin.flipping-to-heads {
+  transform: rotateY(1800deg); /* Multiple spins for excitement */
+}
+
+.coin.flipping-to-tails {
+  transform: rotateY(1980deg); /* Odd multiple for tails */
+}
+
+@media (max-width: 950px) {
+  body {
+    background-color: #3f4e65;
+  }
+
+  #app-container {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+
+  #header-title {
+    font-size: 2.5rem;
+  }
+
+  #header-description {
+    font-size: 0.8rem;
+  }
+
+  #flip-result {
+    font-size: 0.8rem;
+  }
+
+  #coin {
+    width: 160px;
+    height: 160px;
+  }
+}

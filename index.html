@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coin Flip</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <!-- SEO -->
+  <meta name="description" content="This is a coin flipping game using HTML, CSS, and JavaScript to practice my web development skills. 
+      Test my knowledge of HTML and CSS syntax while incorporating JavaScript to create an interactive game." />
+
+  <!-- Open Graph tags -->
+  <!-- Title: 70 chars, Description: 200 chars, Image: 120x120px, up to 1MB -->
+  <meta property="og:title" content="Coin Flip" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <!-- bootstrap@5.3.8 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS and JS -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main id="app-container" class="container p-3 m-auto">
+    <div class="container p-3">
+      <h1 class="d-flex justify-content-center" id="header-title">
+        Flip the coin!
+      </h1>
+      <h6 class="d-flex justify-content-center" id="header-description">
+        Press the coin or the button to flip the coin
+      </h6>
+    </div>
+    <div class="container p-3">
+      <div class="container d-flex p-3">
+        <span class="flex-fill d-flex justify-content-center" id="counter-heads"></span>
+        <span class="flex-fill d-flex justify-content-center" id="counter-tails"></span>
+      </div>
+
+      <div class="container p-3">
+        <div class="p-2 d-flex justify-content-center">
+          <div id="coin" class="coin">
+            <div class="coin-front">
+              <img src="img/heads.svg" alt="Heads" class="coin-side-img">
+            </div>
+            <div class="coin-back">
+              <img src="img/tails.svg" alt="Tails" class="coin-side-img">
+            </div>
+          </div>
+        </div>
+        <div class="p-2 d-flex justify-content-center">
+          <p id="flip-result">Click the coin or button to start!</p>
+        </div>
+        <div class="p-2 d-flex justify-content-center">
+          <button type="button" class="btn btn-primary px-3 mx-3" id="flip-btn">
+            Random
+          </button>
+          <button type="button" class="btn btn-light px-3 mx-3" id="clear-btn">
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center mt-auto" id="footer">
+    <div class="text-center p-3" id="copyright">
+      © 2025 Copyright:
+      <a href="https://github.com/AbdulazizBaHaj" target="_blank">Abdulaziz Ba Haj</a>
+    </div>
+  </footer>
+
+  <!-- bootstrap@5.3.8 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
