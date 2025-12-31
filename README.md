@@ -181,23 +181,6 @@ function randomFlip() {
 - ✅ **Best Practices**: Code organization, comments, accessibility considerations
 - ✅ **Performance**: Vanilla JS (no framework overhead), CSS animations (GPU-accelerated)
 
-## 📱 Browser Compatibility
-
-- ✅ Chrome 90+
-- ✅ Firefox 88+
-- ✅ Safari 14+
-- ✅ Edge 90+
-
-## 🔮 Future Enhancements
-
-- [ ] Sound effects for coin flip
-- [ ] Animation speed control
-- [ ] Statistics tracking (win streaks, percentages)
-- [ ] Betting/prediction mode
-- [ ] Multiple coin designs
-- [ ] localStorage for persistent scores
-- [ ] Dark/light theme toggle
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
@@ -207,12 +190,6 @@ This project is open source and available under the [MIT License](LICENSE).
 **Abdulaziz Ba Haj**
 
 - GitHub: [@AbdulazizBaHaj](https://github.com/AbdulazizBaHaj)
-
-## 🙏 Acknowledgments
-
-- Bootstrap for responsive utilities
-- Google Fonts for typography
-- Inspired by classic coin flip mechanics
 
 ---
 
